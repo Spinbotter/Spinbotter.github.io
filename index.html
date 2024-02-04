@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <title>Spinbotter</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/spin.png">
+  <script src="js/modernizr.custom.js"></script>
+  <script src=./"e99732694a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="loading">
+    <div class="loader">
+      <span class="dots"> .</span>
+      <span class="dots"> .</span>
+      <span class="dots"> .</span>
+      <span class="dots"> .</span>
+      <span class="dots"> .</span>
+      <span class="dots"> .</span>
+      <p class="loader__label">Spinbotter | <span data-words="Hello|আসসালামুয়ালাইকুম|你好"></span>
+      </p>
+    </div>
+  </div>
+  <button id="small-screen-menu">
+    <span class="custom-menu"></span>
+  </button>
+  <div class="slideshow"></div>
+  <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=YDTD38fPc84',containment:'body',autoPlay:true, repeat:true, mute:true, startAt:0, stopAt:0, opacity:1}"></a>
+  <div class="custom-overlay"></div>
+  <a class="brand-logo" href="#Home">
+    <h2 class="image-fluid"><b>Spinbotter</b></h2>
+  </a>
+  <div id="fullpage">
+    <div class="section" id="section0">
+      <section class="content-inside-section">
+        <div class="container">
+          <div class="container-inside">
+            <div class="main-content align-center">
+              <h2 class="on-home"></h2>
+              <img src="img/spin.gif" alt="avatar" class="avatar">
+              <p class="on-home">"Programming is religion and programmers are family!"</p>
+              <br>
+              <div class="command">
+                <a id="button-more" class="light-btn" href="#About" onclick="$('#bgndVideo').YTPUnmute()">Explore <span class="ask-to-scroll">
+                    <span class="arrow">
+                      <span></span>
+                      <span></span>
+                    </span>
+                    <span class="arrow">
+                      <span></span>
+                      <span></span>
+                    </span>
+                    <span class="arrow">
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </span>
+                </a>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="section" id="section2">
+      <section class="content-inside-section">
+        <div class="container">
+          <div class="container-inside">
+            <div class="main-content">
+              <span class="section-name">about</span>
+              <h2>S P I N B O T T E R</h2>
+              <span class="separator"></span>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <p>SELF-TAUGHT DEVELOPER HTML/CSS, C++, Python, and C#</p>
+                  <p>From: Bangladesh</p>
+                  <a href="https://discord.com/users/918191440440475748">Main Discord Profile</a>
+                  <br>
+                  <br>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+              </a class="p-2 bd-highlight" href="https://discord.gg/kxG2HCKB8Q" target="_blank">
+                  <img class="contacticons" src="img/discord.png" alt="icon" width="60" height="50">
+                </a>
+                <a class="p-2 bd-highlight" href="https://t.me/spinbotter" target="_blank">
+                  <img class="contacticons" src="img/telegram.png" alt="icon" width="60" height="60">
+                </a>
+              </a class="p-2 bd-highlight" href="https://github.com" target="_blank">
+                  <img class="contacticons" src="img/github.png" alt="icon" width="60" height="60">
+                </a>
+              </a class="p-2 bd-highlight" href="https://instagram.com" target="_blank">
+                  <img class="contacticons" src="img/insta.png" alt="icon" width="60" height="60">
+                </a>
+              </div>
+              <div class="d-flex justify-content-center"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="section" id="section1">
+      <section class="content-inside-section">
+        <div class="container">
+          <div class="container-inside">
+            <div class="main-content">
+              <h2>Projects</h2>
+              <span class="separator"></span>
+              <div class="row">
+                <div class="col-12 col-lg-3">
+                  <h3>
+                  </a href="https://discord.gg/kxG2HCKB8Q" target="_blank">GocciMenu</a>
+                  </h3>
+                  <p>Best GTA Lua!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer>
+    <div class="line"></div>
+    <div class="row">
+      <div class="col-12 col-xl-4 footer-nav">
+        <ul id="bottomMenu" class="on-left">
+          <li data-menuanchor="Home" class="active">
+            <a href="#Home">Home</a>
+          </li>
+          <li data-menuanchor="About">
+            <a href="#About">About</a>
+          </li>
+          <li data-menuanchor="Projects">
+            <a href="#Projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-xl-4 footer-copyright">
+        <p id="view-count"></p>
+        <script>
+          fetch('/views.php').then(response => response.text()).then(data => {
+            document.getElementById('view-count').textContent = `Spinbotter | ${data.trim()} Views`;
+          });
+        </script>
+      </div>
+      <div class="col-12 col-xl-4 footer-nav">
+        <ul class="on-right">
+          <li class="player-command">
+            <a onclick="$('#bgndVideo').playYTP()">
+              <i class="fas fa-play"></i>
+            </a>
+          </li>
+          <li class="player-command">
+            <a onclick="$('#bgndVideo').pauseYTP()">
+              <i class="fas fa-pause"></i>
+            </a>
+          </li>
+          <li class="player-command">
+            <a onclick="$('#bgndVideo').YTPUnmute()">
+              <i class="fas fa-volume-high"></i>
+            </a>
+          </li>
+          <li class="player-command">
+            <a onclick="$('#bgndVideo').YTPFullscreen()">
+              <i class="fas fa-expand"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easings.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.fullPage.js"></script>
+  <script src="js/jquery.mb.YTPlayer.js"></script>
+  <script src="js/main-youtube.js"></script>
+  <script>
+    let position = 0;
+
+    function title(msg) {
+      document.title = msg.substring(position, msg.length) + msg.substring(0, position);
+      position++;
+      if (position > msg.length) position = 0;
+      window.setTimeout(() => title("Spinbotter "), 170);
+    }
+
+    title("Spinbotter");
+  </script>
+</body>
+
+</html>
